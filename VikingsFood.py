@@ -1,6 +1,6 @@
 from tkinter import *
-from wsgiref.handlers import BaseCGIHandler
 import pygame
+import time
 
 
 janela = Tk()
@@ -15,7 +15,7 @@ label_BG = Label(janela, image=img)
 label_BG.place(x=0, y=0)                    ## Colocando background   
 
 
-janela2 = Toplevel()                   ## CRIANDO AS DUAS JANELAS
+janela2 = Toplevel()                   ## CRIANDO A JANELA SECUNDARIA
 janela2.title("Pedido")
 img2 = PhotoImage(file = "BG22.png")
 janela2.iconbitmap('icone.ico')
@@ -29,8 +29,9 @@ entre1.place(x=47,y=110)                ## espaço para colocar o valor
 
 pygame.mixer.init()
 
-def Passar():
+def Passar():                           ## Metodo para passar Valor para a TV
     #background='#de5900' 
+    
     intvalor = entre1.get()
     valor = str(intvalor)
     label2_pedido = Label(janela2, text = valor, font=('Viking-Normal',200),foreground='white',background='#de5900')
@@ -39,9 +40,12 @@ def Passar():
     pygame.mixer.music.play(loops=0)
 
 
-def limpar():
-    label2_pedido = Label(janela2, text = "       ", font=('Viking-Normal',180), bg='f36200',fg='white',disabledforeground='white')
+
+def limpar():                           ## Metodo para limpar o valor da TV
+    
+    label2_pedido = Label(janela2, text = "      ", font=('Viking-Normal',180), bg='#de5900')
     label2_pedido.place(x=460, y=150)
+    
 
 
 
