@@ -1,6 +1,6 @@
 from tkinter import *
 import pygame
-import time
+
 
 
 janela = Tk()
