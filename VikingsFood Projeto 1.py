@@ -29,10 +29,10 @@ entre1.place(x=47,y=110)                ## espaço para colocar o valor
 
 pygame.mixer.init()
 
-def Passar():
+def Passar():                           
     #background='#de5900' 
     
-    intvalor = entre1.get()
+    intvalor = entre1.get()             ## Metodo para enviar o valor para a outra janela
     valor = str(intvalor)
     label2_pedido = Label(janela2, text = valor, font=('Viking-Normal',115),foreground='white',background='#ff0000')
     label2_pedido.place(x=600, y=320)
@@ -42,9 +42,9 @@ def Passar():
 
 
 def limpar():
-    
+                                        ##Metodo para limpar o valor enviado
     label2_pedido = Label(janela2, text = "      ", font=('Viking-Normal',180), bg='#de5900')
-    label2_pedido.place(x=460, y=150)
+    label2_pedido.place(x=600, y=320)
     
 
 
