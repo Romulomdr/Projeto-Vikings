@@ -1,6 +1,6 @@
-## Projeto-Vikings
- Projeto feito em Python, com o objetivo de mostrar a senha dos pedidos dos clientes. <br>
- Abaixo estão as bibliotecas usadas.
+<h1 align="center"> Projeto-Vikings </h1>
+ <h4 align="center"> Projeto feito em Python, com o objetivo de mostrar a senha dos pedidos dos clientes. <br>
+ Abaixo estão as bibliotecas usadas. </h4>
 
 
 ## 🖥 Tkinter
